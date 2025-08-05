@@ -1,0 +1,6 @@
+git config --global user.name "JEJE-GIT"
+git config --global user.email "jejebrosseau@gmail.com"
+
+
+token : 
+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

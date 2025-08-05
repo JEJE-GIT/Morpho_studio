@@ -1,0 +1,33 @@
+.media_fix {
+    z-index: 10;
+    position: fixed;
+    right: 35px;
+    top: 25vh;
+
+    gap: 50px;
+
+    display: none;
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.media_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    a {
+        margin: 0 15px 0 15px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: none;
+    }
+}

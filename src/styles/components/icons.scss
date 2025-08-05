@@ -1,0 +1,83 @@
+/* ==========================================================================
+   icons / component
+   ========================================================================== */
+
+[class^='icon'] {
+    fill: currentColor; // inherit color of its context
+    display: inline-block;
+    flex: 0 0 auto; // prevent icon shrink/grow if in a flex parent
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+    stroke: transparent;
+    overflow: visible;
+}
+
+.icon_animation {
+    transition: all 0.2s ease-in;
+    transform: translateX(0) scale(1);
+
+    &:hover {
+        transition: all 0.3s ease-in;
+        transform: translateX(-10px) scale(1.5);
+    }
+}
+
+.icon--stroke {
+    fill: transparent;
+    stroke: currentColor;
+}
+
+.icon--xs {
+    height: 0.75em;
+    width: 0.75em;
+}
+
+.icon--sm {
+    height: 0.8em;
+    width: 0.8em;
+}
+
+.icon--md {
+    height: 2em;
+    width: 2em;
+}
+
+.icon--lg {
+    height: 3em;
+    width: 3em;
+}
+
+.icon--xl {
+    @media screen and (min-width: $breakpoint-xs) {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 3.5em;
+        width: 3.5em;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        height: 5em;
+        width: 5em;
+    }
+}
+
+.icon--xl-plus {
+    @media screen and (min-width: $breakpoint-xs) {
+        height: 3.5em;
+        width: 3.5em;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 7em;
+        width: 7em;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        height: 10em;
+        width: 10em;
+    }
+}

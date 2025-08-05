@@ -1,0 +1,38 @@
+/* ==========================================================================
+   carousel / component
+   ========================================================================== */
+
+.swiper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .swiper-pagination-bullet {
+//     // couleur de la bullet active
+//     background: #94eb57;
+//     opacity: 0.5;
+//     width: 15px;
+//     height: 15px;
+// }
+
+// .swiper-pagination-bullet-active {
+//     background: white;
+//     opacity: 1;
+// }
+
+// .swipe_icon {
+//     position: absolute;
+//     bottom: 3%;
+//     right: 23%;
+//     z-index: 2;
+// }

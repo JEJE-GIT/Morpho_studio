@@ -1,0 +1,28 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-p: 'Space Grotesk', serif;
+    --font-h1: 'Space Grotesk', cursive;
+    --font-h2: 'Space Grotesk', sans-serif;
+    --font-h3: 'Space Grotesk', cursive;
+    --font-h4: 'Space Grotesk', sans-serif;
+    --font-btn: 'Space Grotesk', sans-serif;
+
+    // Grosseur des textes PC
+    --font-size-h1: 3.75rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 1.875rem;
+    --font-size-h4: 1.25rem;
+    --font-size-p: 1.125rem;
+    --font-size-button: 1.25rem;
+
+    // Grosseur des textes Mobile
+    --font-size-h1: 2.688rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.625rem;
+    --font-size-h4: 1.125rem;
+    --font-size-p: 1rem;
+    --font-size-button: 1.1rem;
+}

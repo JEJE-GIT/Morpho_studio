@@ -1,0 +1,13 @@
+https://validator.w3.org/
+
+https://jigsaw.w3.org/css-validator/
+
+https://analytics.google.com/analytics/web/provision/#/provision
+
+Ajouter un sitemap
+
+Ajouter un Favicon
+
+Ajouter une page 404
+
+A 1366px, le site web et mal adapté

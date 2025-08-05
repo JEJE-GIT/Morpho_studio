@@ -1,0 +1,140 @@
+/*.cursor {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    pointer-events: none;
+    background-color: var(--color-primary);
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+
+    &.hover {
+        background-color: purple;
+    }
+
+    &.down {
+        background-color: tomato;
+        width: 15px;
+        height: 15px;
+    }
+}*/
+
+//-----CUSTOMS- THEMES-----\\
+
+//Vert
+[data-cursor-theme='vert'] {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        pointer-events: none;
+        border: 2px #94eb57 solid;
+        transform: translate(-50%, -50%);
+        transition: all 0.02s ease-out;
+        z-index: 15;
+
+        &.hover {
+            width: 0px;
+            height: 0px;
+            border-right: 25px solid transparent;
+            border-top: 25px solid #94eb57;
+            border-left: 25px solid #94eb57;
+            border-bottom: 25px solid #94eb57;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        &.down {
+            background-color: #d657eb;
+            border: none;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+//Bleu
+[data-cursor-theme='bleu'] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    pointer-events: none;
+    background-color: #1977a8;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+
+    &.hover {
+        background-color: #12b596;
+    }
+
+    &.down {
+        background-color: #1226b5;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+//Rouge
+[data-cursor-theme='rouge'] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    pointer-events: none;
+    background-color: #a82e14;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+
+    &.hover {
+        background-color: #b55d0d;
+    }
+
+    &.down {
+        background-color: #b50935;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+//Random
+[data-cursor-theme='random'] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    pointer-events: none;
+    background-color: #686ec2;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+
+    &.hover {
+        background-color: #ffd900;
+    }
+
+    &.down {
+        background-color: #dc00ff;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+// TimeStamp video cursor https://youtu.be/sZy3kS-6_cw?t=1418
+
+.cursor__hover .btn {
+    padding: 10%;
+}
+
+.off {
+    background-color: lightcoral;
+
+    &:hover {
+        color: lightcoral;
+    }
+}
