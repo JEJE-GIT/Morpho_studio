@@ -14,12 +14,11 @@
 }
 
 .icon_animation {
-    transition: all 0.2s ease-in;
-    transform: translateX(0) scale(1);
+    transition: all 0.2s $ease-in-quad;
+    transform: scale(1);
 
     &:hover {
-        transition: all 0.3s ease-in;
-        transform: translateX(-10px) scale(1.5);
+        transform: scale(1.1);
     }
 }
 
@@ -60,8 +59,8 @@
     }
 
     @media screen and (min-width: $breakpoint-md) {
-        height: 5em;
-        width: 5em;
+        height: 4.5em;
+        width: 4.5em;
     }
 }
 
@@ -80,4 +79,9 @@
         height: 10em;
         width: 10em;
     }
+}
+
+.brand_icon {
+    color: var(--color-white);
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.7));
 }
