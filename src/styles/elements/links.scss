@@ -4,12 +4,16 @@
    ========================================================================== */
 
 a {
+    font-family: var(--font-btn);
     color: inherit;
     text-decoration: none;
-    font-family: var(--font-btn);
+    font-weight: var(--font-weight-normal);
+    font-weight: regular;
 }
 
 .btn {
+    font-family: var(--font-btn);
+    font-weight: var(--font-weight-normal);
     display: inline-block;
     background-color: var(--color-secondary);
     padding: 20px 35px;
