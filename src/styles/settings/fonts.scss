@@ -3,12 +3,12 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-p: 'Space Grotesk', serif;
-    --font-h1: 'Space Grotesk', cursive;
-    --font-h2: 'Space Grotesk', sans-serif;
-    --font-h3: 'Space Grotesk', cursive;
-    --font-h4: 'Space Grotesk', sans-serif;
-    --font-btn: 'Space Grotesk', sans-serif;
+    --font-p: 'Inria Sans', sans-serif;
+    --font-h1: 'Poppins', sans-serif;
+    --font-h2: 'Poppins', sans-serif;
+    --font-h3: 'Poppins', sans-serif;
+    --font-h4: 'Poppins', sans-serif;
+    --font-btn: 'Inter', sans-serif;
 
     // Grosseur des textes PC
     --font-size-h1: 3.75rem;
@@ -25,4 +25,11 @@
     --font-size-h4: 1.125rem;
     --font-size-p: 1rem;
     --font-size-button: 1.1rem;
+
+    //font weight
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 }
