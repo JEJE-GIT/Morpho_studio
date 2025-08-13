@@ -1,2 +1,31 @@
 .footer {
+    position: relative;
+    background: linear-gradient(to top, #031238, #0135e7, #0484f8);
+    border-radius: 0 0 15px 15px;
+    z-index: 5;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .separateur_footer {
+            content: '';
+            width: 70%;
+            height: 1px;
+            background-color: #0484f8;
+        }
+    }
+
+    .blue_noise {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.15;
+        background-image: url('../assets/images/blue_noise.png');
+        background-repeat: repeat;
+        z-index: -1;
+    }
 }
