@@ -1,0 +1,17 @@
+.a_propos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15vh 2rem 10vh 2rem;
+
+    .text_content {
+        text-align: center;
+        width: 30%;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+}
