@@ -1,0 +1,45 @@
+<section class="contact_section wrapper">
+    <h2>Contact</h2>
+
+    <div class="formulaire">
+        <form>
+            <div class="form_group">
+                <label for="prenom">Nom Complet</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required />
+                <input type="text" id="nom" name="nom" placeholder="Nom" required />
+            </div>
+
+            <div class="form_group">
+                <label for="entreprise">Entreprise *</label>
+                <input type="text" id="entreprise" name="entreprise" placeholder="Nom de l'entreprise" required />
+            </div>
+
+            <div class="form_group">
+                <label for="email">Email et téléphone *</label>
+                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required />
+            </div>
+
+            <div class="form_group">
+                <label>Besoin(s) *</label>
+                <div class="checkbox_group">
+                    <label
+                        ><input type="checkbox" name="besoins" value="Design & Branding" required /> Design &
+                        Branding</label
+                    >
+                    <label><input type="checkbox" name="besoins" value="Web" /> Web</label>
+                    <label><input type="checkbox" name="besoins" value="Création 3D" /> Création 3D</label>
+                    <label><input type="checkbox" name="besoins" value="Médias" /> Médias</label>
+                    <label><input type="checkbox" name="besoins" value="Autre" /> Autre</label>
+                </div>
+            </div>
+
+            <div class="form_group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
+            </div>
+
+            <button type="submit" class="btn_contact">Envoyer</button>
+        </form>
+    </div>
+</section>
