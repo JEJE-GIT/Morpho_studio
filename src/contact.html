@@ -1,41 +1,42 @@
+{% include '_partials/_header.html' %}
+
 <section class="contact_section wrapper">
     <h2>Contact</h2>
 
     <div class="formulaire">
-        <form>
+        <form action="https://formsubmit.co/Infosmorphostudio@gmail.com" method="POST">
             <div class="form_group">
                 <label for="prenom">Nom Complet</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required />
-                <input type="text" id="nom" name="nom" placeholder="Nom" required />
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" />
+                <input type="text" id="nom" name="nom" placeholder="Nom" />
             </div>
 
             <div class="form_group">
-                <label for="entreprise">Entreprise *</label>
+                <label for="entreprise">Entreprise <span>*</span></label>
                 <input type="text" id="entreprise" name="entreprise" placeholder="Nom de l'entreprise" required />
             </div>
 
             <div class="form_group">
-                <label for="email">Email et téléphone *</label>
+                <label for="email">Email et téléphone <span>*</span></label>
                 <input type="email" id="email" name="email" placeholder="Email" required />
                 <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required />
             </div>
 
             <div class="form_group">
-                <label>Besoin(s) *</label>
+                <label>Besoin(s) <span>*</span></label>
                 <div class="checkbox_group">
-                    <label
-                        ><input type="checkbox" name="besoins" value="Design & Branding" required /> Design &
-                        Branding</label
+                    <label class="besoins"
+                        ><input type="checkbox" name="besoin branding et design" value="OUI" /> Design & Branding</label
                     >
-                    <label><input type="checkbox" name="besoins" value="Web" /> Web</label>
-                    <label><input type="checkbox" name="besoins" value="Création 3D" /> Création 3D</label>
-                    <label><input type="checkbox" name="besoins" value="Médias" /> Médias</label>
-                    <label><input type="checkbox" name="besoins" value="Autre" /> Autre</label>
+                    <label class="besoins"><input type="checkbox" name="besoin Web" value="OUI" /> Web</label>
+                    <label class="besoins"><input type="checkbox" name="besoin 3d" value="OUI" /> Création 3D</label>
+                    <label class="besoins"><input type="checkbox" name="besoin Média" value="OUI" /> Médias</label>
+                    <label class="besoins"><input type="checkbox" name="besoin Autre" value="OUI" /> Autre</label>
                 </div>
             </div>
 
             <div class="form_group">
-                <label for="message">Message *</label>
+                <label for="message">Message <span>*</span></label>
                 <textarea id="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
             </div>
 
@@ -43,3 +44,5 @@
         </form>
     </div>
 </section>
+
+{% include '_partials/_footer.html' %}

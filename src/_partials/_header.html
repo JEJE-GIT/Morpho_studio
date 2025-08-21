@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html id="html_document" lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,22 +19,44 @@
   <!-- <div class="cursor" data-cursor-theme="vert" data-component="Cursor"></div> -->
 
   <!-- data-component="Header" -->
-  <header class="header"> 
+  <header class="header" data-component="Header"> 
 
-    <div class="blue_noise"></div>
+    <nav class="nav_normal">
+      <div class="blue_noise"></div>
     
-    <div class="wrapper">
-      <a  href="../index.html">
-        <img class="brand_icon icon--xl icon_animation" src="./assets/icons/morpho.svg" alt="Morpho studio logo" />
-      </a>
+      <div class="wrapper">
+        <a  href="../index.html">
+          <img class="brand_icon icon--xl icon_animation" src="./assets/icons/morpho.svg" alt="Morpho studio logo" />
+        </a>
 
-        <div class="nav_list">
-          <a href="./index.html" class="nav_item">Accueil</a>
-          <a href="./a_propos.html" class="nav_item">A propos</a>
-          <a href="./nos_services.html" class="nav_item">Nos services</a>
-          <a href="#" class="nav_item hide_element">Réalisations</a>
-          <a href="./contact.html" class="nav_item nav_btn">Contactez-nous</a>
-        </div>
-    </div>
+          <div class="nav_list">
+            <a href="./index.html" class="nav_item">Accueil</a>
+            <a href="./a_propos.html" class="nav_item">A propos</a>
+            <a href="./nos_services.html" class="nav_item">Nos services</a>
+            <a href="#" class="nav_item hide_element">Réalisations</a>
+            <a href="./contact.html" class="nav_item nav_btn">Contactez-nous</a>
+          </div>
+      </div>
+    </nav>
+
+    <nav class="nav_mobile">
+      <div class="wrapper">
+        <a href="../index.html">
+          <img class="brand_icon icon--xl icon_animation" src="./assets/icons/morpho.svg" alt="Morpho studio logo" />
+        </a>
+        <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile_menu" id="mobileMenu" hidden>
+        <a href="./index.html" class="nav_item">Accueil</a>
+        <a href="./a_propos.html" class="nav_item">A propos</a>
+        <a href="./nos_services.html" class="nav_item">Nos services</a>
+        <a href="#" class="nav_item hide_element">Réalisations</a>
+        <a href="./contact.html" class="nav_item nav_btn">Contactez-nous</a>
+      </div>
+    </nav>
 
   </header>
