@@ -27,11 +27,22 @@ html {
 
 body {
     font-family: var(--font-p);
-    font-size: var(--font-size-p);
     font-weight: var(--font-weight-normal);
     color: var(--color-black);
     line-height: 1.6;
     background: var(--color-tertiery);
+
+    @media screen and (min-width: $breakpoint-xs) {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-p);
+    }
 }
 
 .hide_element {

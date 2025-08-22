@@ -2,26 +2,85 @@
     h2 {
         margin-bottom: 1rem;
         margin-left: 1rem;
+
+        @media screen and (min-width: $breakpoint-xs) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            text-align: left;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+        }
     }
 
     .projets_grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+
         background-color: var(--color-tertiery);
+
+        @media screen and (min-width: $breakpoint-xs) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            gap: 2rem;
+        }
 
         .projet {
             position: relative;
+            width: 100%;
+
+            @media screen and (min-width: $breakpoint-xs) {
+                height: 25vh;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                height: 40vh;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+            }
+
+            @media screen and (min-width: $breakpoint-lg) {
+                height: 45vh;
+            }
 
             p {
                 color: var(--color-white);
-                font-size: var(--font-size-button);
                 position: absolute;
                 margin: 0;
-                padding: 0.5em 1em;
                 left: 0;
                 bottom: 0;
                 background: linear-gradient(to left, #031238, #0135e7, #0484f8);
+
+                @media screen and (min-width: $breakpoint-xs) {
+                    padding: 0.1em 0.4em;
+                    font-size: 0.9rem;
+                }
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    padding: 0.5em 1em;
+                    font-size: 1rem;
+                }
+
+                @media screen and (min-width: $breakpoint-md) {
+                }
+
+                @media screen and (min-width: $breakpoint-lg) {
+                }
             }
 
             img {

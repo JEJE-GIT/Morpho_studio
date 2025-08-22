@@ -15,31 +15,67 @@ h6 {
 
 h1 {
     font-family: var(--font-h1);
-    font-size: var(--font-size-h1);
     line-height: 1.5;
+
+    @media screen and (min-width: $breakpoint-xs) {
+        font-size: var(--font-size-h1-mobile);
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h1-tablet);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-h1);
+    }
 }
 
 h2 {
-    font-size: var(--font-size-h2);
     font-family: var(--font-h2);
+
+    @media screen and (min-width: $breakpoint-xs) {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-h2);
+    }
 }
 
 h3 {
-    font-size: var(--font-size-h3);
     font-family: var(--font-h3);
+
+    @media screen and (min-width: $breakpoint-xs) {
+        font-size: var(--font-size-h3-mobile);
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-h3);
+    }
 }
 
 h4 {
-    font-size: var(--font-size-h4);
     font-family: var(--font-h4);
-}
 
-h5 {
-    font-size: var(--font-size-h5);
-}
+    @media screen and (min-width: $breakpoint-xs) {
+        font-size: var(--font-size-h4-mobile);
+    }
 
-h6 {
-    font-size: var(--font-size-h6);
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h4-tablet);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-h4);
+    }
 }
 
 em {
