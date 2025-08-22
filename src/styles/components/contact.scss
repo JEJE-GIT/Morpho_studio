@@ -1,10 +1,23 @@
 .contact_section {
-    max-width: 40vw;
     margin: 4rem auto;
     padding: 10vh 2rem 2rem 2rem;
     background: var(--color-tertiery, #f8f9fa);
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+
+    @media screen and (min-width: $breakpoint-xs) {
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        max-width: 80vw;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        max-width: 40vw;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+    }
 
     h2 {
         text-align: center;
