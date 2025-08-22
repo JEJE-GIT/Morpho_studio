@@ -3,8 +3,20 @@
 
     h2 {
         text-align: center;
-        margin-bottom: 3rem;
-        font-weight: 500;
+        font-weight: 600;
+
+        @media screen and (min-width: $breakpoint-xs) {
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin-bottom: 3rem;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+        }
     }
 
     h3 {
@@ -28,24 +40,86 @@
         justify-content: center;
         margin: 2rem 0 2rem 0;
 
+        @media screen and (min-width: $breakpoint-xs) {
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin: 2rem 0 2rem 0;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+        }
+
         p {
-            max-width: 70%;
+            @media screen and (min-width: $breakpoint-xs) {
+                max-width: 100%;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                max-width: 70%;
+            }
+
+            @media screen and (min-width: $breakpoint-lg) {
+            }
         }
 
         img {
-            width: 60%;
-            height: 40vh;
             object-fit: cover;
+
+            @media screen and (min-width: $breakpoint-xs) {
+                width: 100%;
+                height: 40vh;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                height: 50vh;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                width: 60%;
+                height: 40vh;
+            }
+
+            @media screen and (min-width: $breakpoint-lg) {
+            }
         }
     }
 
     .to_right {
-        align-items: flex-end;
-        text-align: right;
+        @media screen and (min-width: $breakpoint-xs) {
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+        }
     }
 
     .to_left {
-        align-items: flex-start;
-        text-align: left;
+        @media screen and (min-width: $breakpoint-xs) {
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+        }
     }
 }
